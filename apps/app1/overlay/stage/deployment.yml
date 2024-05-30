@@ -9,6 +9,7 @@ spec:
     spec:
       containers:
         - name: app-01
+          image: crz2wyl7mwvm3vq.azurecr.io/app-01:__Build.BuildId__
           env:
             - name: ASPNETCORE_ENVIRONMENT
               value: staging
