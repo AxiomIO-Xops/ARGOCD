@@ -11,7 +11,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://krishnamohanp0097@dev.azure.com/krishnamohanp0097/argocd/_git/argotesting  
+    repoURL: https://krishnamohanp0097@dev.azure.com/krishnamohanp0097/argocd/_git/stable_argo_structure
     targetRevision: HEAD  
     path: bootstrap/argocd  
 
