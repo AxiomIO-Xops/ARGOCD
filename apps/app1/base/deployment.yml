@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: app-01
+  name: app-01
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: app-01
+  template:
+    metadata:
+      labels:
+        app: app-01
+    spec:
+      containers:
+        - name: app-01
+          image: crz2wyl7mwvm3vq.azurecr.io/app-01:68
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "256m"
+            requests:
+              memory: "256Mi"
+              cpu: "128m"
+      imagePullSecrets:
+      - name: acr-secret
