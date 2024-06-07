@@ -17,7 +17,7 @@ spec:
   project: default
   source:
     path: projects
-    repoURL: https://krishnamohanp0097@dev.azure.com/krishnamohanp0097/argocd/_git/stable_argo_structure
+    repoURL: $GIT_URL
   syncPolicy:
     automated:
       allowEmpty: true

@@ -4,7 +4,7 @@
     "destNamespace": "prod",
     "destServer": "https://kubernetes.default.svc",
     "srcPath": "apps/app1/overlays/prod",
-    "srcRepoURL": "https://krishnamohanp0097@dev.azure.com/krishnamohanp0097/argocd/_git/stable_argo_structure",
+    "srcRepoURL": "$GIT_URL",
     "srcTargetRevision": "",
     "labels": null,
     "annotations": null

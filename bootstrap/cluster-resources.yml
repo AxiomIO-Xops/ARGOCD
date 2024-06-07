@@ -10,7 +10,7 @@ spec:
   - git:
       files:
       - path: bootstrap/cluster-resources/*.json
-      repoURL: https://krishnamohanp0097@dev.azure.com/krishnamohanp0097/argocd/_git/stable_argo_structure
+      repoURL: $GIT_URL
       requeueAfterSeconds: 20
       revision: ""
       template:
@@ -39,7 +39,7 @@ spec:
       project: default
       source:
         path: bootstrap/cluster-resources/{{name}}
-        repoURL: https://krishnamohanp0097@dev.azure.com/krishnamohanp0097/argocd/_git/stable_argo_structure
+        repoURL: $GIT_URL
       syncPolicy:
         automated:
           allowEmpty: true
