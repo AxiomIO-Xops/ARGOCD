@@ -11,7 +11,7 @@ pipeline {
                             branches: [[name: '*/main']],
                             userRemoteConfigs: [[
                                 credentialsId: 'git_id',
-                                url: 'https://github.com/pkrishnamohan007/argocd'
+                                url: 'https://github.com/pkrishnamohan007/argocd.git'
                             ]]
                         ])
                     }
