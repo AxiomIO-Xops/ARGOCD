@@ -1,6 +1,5 @@
 pipeline {
     agent any  // Use any available agent
-
     stages {
         stage('Checkout Repositories') {
             steps {
